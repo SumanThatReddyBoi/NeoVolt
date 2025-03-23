@@ -1,15 +1,19 @@
-# Chiprime Mentorship
+# Chiprime Mentorship - Pages
 
-Pages Completed
+Base Pages
 - Homepage (index.html)
 - Coming Soon (cmgsoon.html)
 - 404 Error (404.html)
 
-Pages to Complete
-- Login/Signup+ TnC Confirmation
-- Loading Screen (Spinner)
-- Products and Search Results (prs.html)
-- Product Details
-- Cart
-- Profile
-- Newsletter Popup
+Specialized Done
+- Login/Signup + TnC Confirmation (login.html)
+- Products and Search Results (prod.html)
+- Product Details (detail.html)
+- Cart (cart.html)
+- Profile (prof.html)
+- Privacy Policy (pp.html)
+- Terms and Conditions (tnc.html)
+
+Devlopment Pending
+- Newsletter Popup (in development)
+- Loading Screen (in development)
