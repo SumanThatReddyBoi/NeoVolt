@@ -1,0 +1,27 @@
+.page-body {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coming-soon-inner{
+    text-align: center;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
+.btn-warning {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    background-color: maroon;
+    color: white;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/bolt.png" type="image/x-icon"/>
+    <title>NeoVolt | Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="prof-sty.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NAVIGATION BARr-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.html">
+            <i class="bi bi-lightning-fill fs-5 text-warning"></i> NeoVolt
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html"><i class="bi bi-house-door-fill me-2"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#"><i class="bi bi-info-circle-fill me-2"></i> About Us</a>
+                </li>
+
+            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-fill me-2"></i> Product Categories
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-phone me-2"></i> Mobile</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-laptop me-2"></i> Laptop</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-tablet me-2"></i> Tablet</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-tv me-2"></i> Television</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-house-door me-2"></i> Home Appliances</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-watch me-2"></i> Smart Watches</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-controller me-2"></i> Gaming</a></li>
+                        <li><a class="dropdown-item" href="cmgsoon.html"><i class="bi bi-headphones me-2"></i> Accessories</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="d-flex me-3">
+                <input class="form-control me-2 bg-dark text-light border-secondary search-bar" type="search" placeholder="Search for products...">
+                <button a href="404.html" class="btn btn-outline-warning me-2" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+
+            <a href="prof.html" class="btn btn-outline-warning me-2">
+                <i class="bi bi-person-circle fs-5"></i>
+            </a>
+            <a href=".html" class="btn btn-outline-warning me-2">
+                <i class="bi bi-cart3 fs-5"></i>
+            </a>
+        </div>
+    </div>
+    </nav>
+    <!--NAVIGATION BAR ENDS-->
+
+
+  <!-- Profle-->
+  <div class="container mt-5">
+    <div class="card profile-card">
+        <div class="row g-0">
+            
+            <div class="col-md-4 profile-sidebar">
+                <div class="text-center p-4">
+                    <img src="assets/profile.jpg" alt="User Avatar" class="profile-img" style="height: 120px; width: 120px;">
+                    <h3 class="text-gold mt-3">John Doe</h3>
+                    <p class="text-light">Customer ID: #6534</p>
+                </div>
+            </div><div class="col-md-8 p-4">
+                <h4 class="text-white mt-3">Profile Desciption</h4>
+                <textarea class="form-control gold-text-input" id="customBio" placeholder="Write something about yourself..."></textarea>
+                <button class="btn btn-gold mt-2 w-100" onclick="saveBio()">Save</button><br>
+                <h4 class="text-white mt-3">Transaction History</h4>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionTable"></tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-white mt-3">Order History</h4>
+                <ul class="list-group" id="orderList">
+                    <li class="list-group-item bg-dark text-white">Laptop - $900</li>
+                    <li class="list-group-item bg-dark text-white">Headphones - $50</li>
+                    <li class="list-group-item bg-dark text-white">Smartphone - $250</li>
+                </ul><br>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p><strong>Total Transactions:</strong> <span id="totalTransactions"></span></p>
+                        <p><strong>Total Amount Spent:</strong> $<span id="totalAmount">1,200.00</span></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+    <!--Footer-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <!-- Brand Logo -->
+            <div class="col-lg-3 col-md-6 footer-brand">
+                <h4><i class="bi bi-lightning-fill text-warning"></i> NeoVolt</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-social">
+                <h5>Follow Us</h5>
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+                <h5>Contact Us</h5>
+                <p><i class="bi bi-envelope"></i> help@neovolt.com</p>
+                <p><i class="bi bi-telephone"></i> +91 1234567890</p>
+                <p><i class="bi bi-geo-alt"></i> 1234 Testing Drive, Mars</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 NeoVolt. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+
+const transactions = [
+    { date: "2024-03-01", type: "Replacement", amount: "$250", status: "Processing..." },
+    { date: "2024-03-05", type: "Order", amount: "$50", status: "Shipping Now" },
+    { date: "2024-03-10", type: "Order", amount: "$900", status: "Completed" }
+];
+
+
+
+
+const transactionTable = document.getElementById("transactionTable");
+transactions.forEach(tx => {
+    const row = `<tr>
+        <td>${tx.date}</td>
+        <td>${tx.type}</td>
+        <td>${tx.amount}</td>
+        <td>${tx.status}</td>
+    </tr>`;
+    transactionTable.innerHTML += row;
+});
+
+
+
+
+document.getElementById("totalTransactions").innerText = transactions.length;
+document.getElementById("totalAmount").innerText = transactions.reduce((sum, tx) => sum + parseFloat(tx.amount.replace("$", "")), 0).toFixed(2);
+
+function saveBio() {
+    const bio = document.getElementById("customBio").value;
+    localStorage.setItem("userBio", bio);
+    alert("Profile bio saved successfully!");
+}
+
+window.onload = () => {
+    document.getElementById("customBio").value = localStorage.getItem("userBio") || "";
+};
+
+</script>
+</body>
+</html>
