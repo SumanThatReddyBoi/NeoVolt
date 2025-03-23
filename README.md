@@ -1,4 +1,4 @@
-# Chiprime Mentorship - Pages
+# NeoVolt / Mentorship - Pages
 
 Base Pages
 - Homepage (index.html)
