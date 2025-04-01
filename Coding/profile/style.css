@@ -1,0 +1,55 @@
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card {
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.profile-sidebar {
+    background: #111;
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2x solid gold;
+}
+
+.text-gold {
+    color: gold !important;
+}
+
+.gold-text-input {
+    background: black !important;
+    color: gold !important;
+    border: 2px solid gold;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.gold-text-input::placeholder {
+    color: rgba(255, 215, 0, 0.6);
+}
+
+.btn-gold {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btn-gold:hover {
+    background: rgba(255, 215, 0, 0.8);
+}
+
+#totalspent{
+    font-size: 21px;
+}
