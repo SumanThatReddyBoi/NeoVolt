@@ -1,6 +1,7 @@
 # Branch Directory ~ Change Log
 
 Version 1 - Initial Upload (Loading Page and Newsletter Popups Still Pending)
+
 Version 2 - Revised Upload (Modified based on Issues) - Page Linking, Auto Scaling, Color Changes, Minor Bug Fixes.
   - Progression to access sites
     - Home Page (index.html)
