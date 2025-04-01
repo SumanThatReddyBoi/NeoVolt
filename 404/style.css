@@ -1,0 +1,40 @@
+.not-found-body {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.not-found-container {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: gold;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-warning {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    background-color: black;
+    color: gold;
+}

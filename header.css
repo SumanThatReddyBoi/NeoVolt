@@ -1,0 +1,165 @@
+/*NavBar Styles*/
+.navbar-dark {
+    color: #f8f9fa;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    color: #f8f9fa;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: #f8f9fa;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-dark .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+.dropdown-menu-dark {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+.dropdown-menu-dark .dropdown-item i {
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-item a,
+.navbar-nav .nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFD700 !important;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+::placeholder {
+    color: #ccc !important;
+    opacity: 1;
+    font-style: italic;
+}
+
+.search-bar {
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    width: 500px;
+}
+
+/*Searchbar Web Browser Fix*/
+input::-webkit-input-placeholder {
+    color: #ccc !important;
+}
+
+input::-moz-placeholder {
+    color: #ccc !important;
+}
+
+input:-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+.form-control {
+    color: white !important;
+    background-color: #222 !important;
+    border: 1px solid #555 !important;
+}
+
+
+/*Footer*/
+
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer h4 {
+    color: gold;
+}
+
+.footer h5 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: gold;
+}
+
+.footer-links ul {
+    padding: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-social .social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    color: gold;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid gold;
+    padding-top: 10px;
+    font-size: 14px;
+}
